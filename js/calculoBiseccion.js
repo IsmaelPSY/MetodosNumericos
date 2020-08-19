@@ -69,8 +69,8 @@ function realizargrafica()
 	    color: 'red' }],
 	  grid: true,
 	   title: 'f(x) = '+valor1,
-	   width: 580,
-	  height: 400,
+	   width: 850,
+	  height: 500,
 	  xAxis: {
 	    label: 'eje-x',
 	    domain: [-6, 6]
