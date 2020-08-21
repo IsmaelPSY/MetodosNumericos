@@ -23,16 +23,17 @@ function realizarbiseccion()
     var a= parseFloat(document.getElementById("a").value);
     var b= parseFloat(document.getElementById("b").value);
     var error= parseFloat(document.getElementById("error").value);
-    var x=(a+b)/2;n=0;
+    n=0;
        fa =fx(a);
        fb =fx(b);
+       var x= b-((fb*(a-b))/(fa-fb))
        aux=x;
    if(fa*fb<0){
        document.getElementById('tablaresultado').innerHTML="<thead><tr><td><strong>i</strong></td><td><strong>a</strong></td><td><strong>b</strong></td><td><strong>r</strong></td><td><strong>f(a)</strong></td><td><strong>f(b)</strong></td><td><strong>f(r)</strong></td><td><strong>error</strong></td></tr></thead>";
     do {
          r = b-((fb*(a-b))/(fa-fb));      
          if(n>0)
-         {aux=Math.abs((r-aux2)/r);}      
+         {aux=Math.abs(r-aux2);}      
          fr =fx(r);
          document.getElementById('tablaresultado').innerHTML+="<tr><td>"+n+"</td><td>"+a+"</td><td>"+b+"</td><td>"+r+"</td><td>"+fa+"</td><td>"+fb+"</td><td>"+fr+"</td><td>"+aux+"</td> </tr>";
          if (fr*fa > 0) {
