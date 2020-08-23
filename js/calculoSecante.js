@@ -1,9 +1,6 @@
 function realizarintervalo()
 {
     document.getElementById('tablaresultado').innerText="";
-    var funcion= document.getElementById("funcion").value;
-    var a= parseFloat(document.getElementById("a").value);
-    var b= parseFloat(document.getElementById("b").value);
    $('#tablaresultado').append("<thead><tr><td><strong>X</strong></td><td><strong>-10</strong></td><td><strong>-9</strong></td><td><strong>-8</strong></td><td><strong>-7</strong></td><td><strong>-6</strong></td><td><strong>-5</strong></td><td><strong>-4</strong></td>"+
    "<td><strong>-3</strong></td><td><strong>-2</strong></td><td><strong>-1</strong></td><td><strong>0</strong></td><td><strong>1</strong></td><td><strong>2</strong></td><td><strong>3</strong></td><td><strong>4</strong></td><td><strong>5</strong></td><td><strong>6</strong></td><td><strong>7</strong></td>"+
    "<td><strong>8</strong></td><td><strong>9</strong></td><td><strong>10</strong></td></tr></thead><tr>");
@@ -19,7 +16,6 @@ function realizarbiseccion()
     document.getElementById('tablaresultado').innerText="";
     //var funcion=e^(-x)-x // 6x^3-2x^2-x-1;
     var n,r,fr,fa,fb,aux,aux2;
-    var funcion= document.getElementById("funcion").value;
     var a= parseFloat(document.getElementById("a").value);
     var b= parseFloat(document.getElementById("b").value);
     var error= parseFloat(document.getElementById("error").value);
