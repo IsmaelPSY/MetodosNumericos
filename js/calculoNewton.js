@@ -34,6 +34,7 @@ function realizarbiseccion()
                dev = derivada(a);
           
            n++;
+           //error=(Xi+1)-Xi
           } while (aux >= error);
    document.getElementById('resultado_intervalo').innerHTML="<div class='alert alert-success'><a class='close' data-dismiss='alert'>X</a>La raiz encontrada es: "+r+" con error: "+aux+"</div>";
     
