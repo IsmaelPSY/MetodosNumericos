@@ -11,10 +11,10 @@ function realizarintervalo()
     }
     $('#tablaresultado').append("</tr>");  
 }
-function realizarbiseccion()
+function realizarRegulaFalsi()
 {
     document.getElementById('tablaresultado').innerText="";
-    //var funcion=e^(-x)-x // 6x^3-2x^2-x-1;
+ 
     var n,r,fr,fa,fb,aux,aux2;
     var funcion= document.getElementById("funcion").value;
     var a= parseFloat(document.getElementById("a").value);
